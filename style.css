@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialised;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root{
+  font-size: 62.5%;
+  --color-base-white: #ffffff;
+  --color-base-gray-100: #f5f5f5;
+  --color-base-gray-300:#8d8d99;
+  --color-base-grey-500: #3d3d3d;
+  --color-base-gray-900: #202024;
+  font-family: 'Mulish', sans-serif;
+
+}
+html, body, input{
+  font-family: 'Mulish', sans-serif;
+}
+body{
+  font-size: 1.6rem;
+  background: var(--color-base-white);
+  color: var(--color-base-gray-900);
+  
+}
+#app{
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 100vh;
+
+}
+.container{
+  padding: 1.6rem 3.2rem;
+  width: min(112rem, 100%);
+  margin: 0 auto;
+}
+main{
+  overflow-y: scroll;
+  background:var(--color-base-gray-100);
+
+}
+
+header,
+nav,
+nav ul{
+  display: flex;
+  align-items: center;
+  gap: 7.2rem;
+  
+
+}
+header form{
+  flex: 1;
+}
+
+nav ul{
+  list-style: none;
+  font-size: 1.8rem;
+  color: var(--color-base-gray-300);
+}
+ul li.active{
+  color: var(--color-base-gray-900);
+ }
+ .input-wrapper label{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+ }
+ .input-wrapper input{
+  width: 100%;
+  padding: 1.6rem;
+
+  background: var(--color-base-gray-100);
+  border: 0;
+  border-radius: 1.9rem;
+
+ 
+  font-size: 1.6rem;
+  font-weight: 600;
+  opacity: 0.56;
+
+ }
+ .input-wrapper input::placeholder{
+  color: var(--color-base-grey-500);
+ }
+
+.avatar{
+  width: 8.0rem;
+  height: 8.0rem;
+  object-fit: cover;
+}
+
+/* Galeria */
+main h1 {
+  padding-top: 1.6rem;
+  font-size: 2.4rem;
+}
+.gallery{
+  margin-top: 3.2rem;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.2rem;
+}
+.item{
+  background-color: var(--color-base-white);
+  border-radius: .8rem;
+
+  overflow: hidden;
+
+}
+.item img{
+  width: 100%;
+  aspect-ratio: 9/16;
+  object-fit: cover;
+
+}
+.item img:hover{
+
+}
+.details{
+  padding: 2.2rem;
+}
+.details h2{
+  font-size: 1.8rem;
+ 
+}
+.tags{
+  margin-top: 1.2rem;
+
+}
+.tags span{
+  padding: .6rem;
+  background-color: var(--color-base-gray-100);
+  border-radius: .4rem;
+
+  line-height: 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+footer p{
+  text-align: center;
+  padding: 1.6rem;
+  font-weight: 600;
+}
+
+/* PROPORÇÃO DE IMAGENS 
+*USAMOS: 
+aspect-ratios
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
