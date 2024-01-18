@@ -113,15 +113,23 @@ main h1 {
 }
 .item img{
   width: 100%;
-  aspect-ratio: 9/16;
+  aspect-ratio: 16/12;
   object-fit: cover;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 1s;
 
 }
 .item img:hover{
-
+   filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+   transform: scale(1.1) rotate(-2deg) ;
+   
 }
 .details{
   padding: 2.2rem;
+  background-color: var(--color-base-white);
+  z-index: 1;
+  position: relative;
 }
 .details h2{
   font-size: 1.8rem;
@@ -150,11 +158,10 @@ footer p{
 /* PROPORÇÃO DE IMAGENS 
 *USAMOS: 
 aspect-ratios
-
-
-
-
 */
+
+/*  Propriedades do filter */
+
 
 
 
